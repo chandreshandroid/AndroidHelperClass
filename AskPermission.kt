@@ -9,11 +9,11 @@ import androidx.core.content.ContextCompat
 /**
  * Created by Chandresh Patel on 23/09/2021.
  * Ask permission run time
- * call requestPermission for asking permission
- * override onRequestPermissionsResult method in Activity and call this method onRequestPermissionsResult in this.
- * you are getting permission callback.
- * onGranted callback for granted all permission by user or already granted
- * onDenied callback for denied permission by the user
+ * call [AskPermission.requestPermission] for asking permission
+ * override [Activity.onRequestPermissionsResult] method in Activity and call this method [AskPermission.onRequestPermissionsResult] in this.
+ * you are getting permission callback.[AskPermission.PermissionCallback]
+ * [AskPermission.PermissionCallback.onGranted]  callback for granted all permission by user or already granted
+ * [AskPermission.PermissionCallback.onDenied] callback for denied permission by the user
  */
 const val PERMISSION_REQUEST = 100
 
